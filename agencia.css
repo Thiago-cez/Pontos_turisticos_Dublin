@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat','sans-serif';
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background-color: #016306;
+    color: #fc8312;
+    font-family: 'montserrat','sans-serif';
+}
+
+header {
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url(assets/dublin1_hd.jpg);
+    color: rgb(0, 255, 13);
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+    color: #fc8312;
+    position: relative;
+}
+
+header nav img {
+    font-weight: bold;
+}
+header nav p {
+    font-weight: bold;   
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.header-content h1 { 
+
+    margin-bottom: 0px;
+    font-size: 4rem;
+
+}
+
+.header-content p {
+    color: rgb(255, 255, 255);
+}
+
+header nav ul{
+   list-style: none;
+   display: flex;
+}
+
+header nav ul li{
+   margin: 0 15px;
+}
+
+.pacotes {
+    background: no-repeat center/cover url(assets/back-picture.jpg);
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    border-radius: 24px 0px;
+    background: rgb(253, 253, 166);
+    margin: 25px;
+    position: relative;   
+}
+
+.pacotes .card-image {
+width:250px ;
+height: 200px;
+border-radius: 24px 0 0 0;
+margin: auto;
+}
+
+.pacotes .card-content {
+    padding: 0 15px ;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding:0px;
+}
+.pacotes .card-content ul li {
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: rgb(0, 0, 0);
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+
+}
+.pacotes .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background:rgb(255, 238, 0);
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background:rgb(11, 202, 145);
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+
+}
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+}
+
+.servicos {
+    padding: 15px;
+    background-color: rgb(220, 255, 219);
+}
+
+.servicos button {
+    background:  #016306;
+}
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: inherit;
+}
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+}
+
+.servicos .card svg:hover {
+    stroke: #f86300 ;
+    transform: scale(1.2);
+}
+
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align:center;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+  .contato {
+      padding: 60px;
+      position: relative;
+  }
+
+  .contato .contato-card {
+      width: 350px;
+      height: 300px;
+      background: #84e784;
+      position: absolute;
+      z-index: 99;
+
+      border-radius: 8px;
+
+      top: calc(50% - 150px);
+      left: calc(20% - 175px);
+
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  }
+
+.contato .contato-card li {
+      font-size: .8rem ;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+}
+
+.contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+
+}
+
+.contato .contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+
+/* RESPONSIVIDADE*/
+
+/* especial para mapa*/
+@media (max-width: 950px){
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card{
+        left: 40px;
+    }
+}
+
+@media (max-width: 800px){
+   .contato {
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+/*Landscape phone to portrait tablet */
+@media (max-width: 767px){
+    .servicos .servicos-cards {
+ justify-content: center;
+}
+
+
+@media(max-width: 480px){
+    body {
+        margin-bottom: 55px;
+        }
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 60px;
+
+        z-index: 99;
+
+        background: #1d61dd;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+      
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicos .servicos-cards {
+    justify-content: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: right;
+        font-size: 4rem;
+        box-sizing: border-box;
+        margin-left: 57px;
+     }
+
+}
+
+
+
+
+@media(max-width: 360px) {
+.logo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: right;
+    font-size: 4rem;
+    box-sizing: border-box;
+    margin-left: 28px;
+}
+}
